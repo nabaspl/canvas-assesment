@@ -1,7 +1,7 @@
 import  './App.css'
-import Unrelease  from '../src/page/unrelease'
+import Home  from '../src/page/home'
 function App() {
-  return <Unrelease/>;
+  return <Home/>;
 }
 
 export default App;
