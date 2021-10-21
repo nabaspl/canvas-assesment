@@ -19,6 +19,12 @@ const useStyle = makeStyles({
         minHeight: "calc(100vh - 3.5rem)",
         padding: "1rem",
         marginLeft:"4rem"
+    },
+    CounterPaper:{
+        height:"3rem",
+        display:"flex",
+        justifyContent: "center",
+        alignItems: "center"
     }
 })
 export default useStyle;
