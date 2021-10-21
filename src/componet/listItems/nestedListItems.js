@@ -37,9 +37,9 @@ export default function NestedList() {
           <InboxIcon />
         </ListItemIcon>
         <ListItemText primary="Inbox" />
-        {open=='Inbox' ? <ExpandLess /> : <ExpandMore />}
+        {open==='Inbox' ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
-      <Collapse in={menuShow&&open=='Inbox'} timeout="auto">
+      <Collapse in={menuShow&&open==='Inbox'} timeout="auto">
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
@@ -54,9 +54,9 @@ export default function NestedList() {
           <Send />
         </ListItemIcon>
         <ListItemText primary="Sent" />
-        {open=='Sent' ? <ExpandLess /> : <ExpandMore />}
+        {open==='Sent' ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
-      <Collapse in={menuShow&&open=='Sent'} timeout="auto">
+      <Collapse in={menuShow&&open==='Sent'} timeout="auto">
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
