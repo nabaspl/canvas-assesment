@@ -16,12 +16,12 @@ export default function Home() {
   const [countRight,setCountRight] = useState(0);
   const [toggle,setToggle] = useState('countLeft');
   const handleIncrement = () =>{
-    if(toggle=='countLeft')
+    if(toggle==='countLeft')
       setCountLeft(countLeft+1);
     else
       setCountRight(countRight+1); 
 
-    let tt = toggle=='countLeft'?'countRight':'countLeft';
+    let tt = toggle==='countLeft'?'countRight':'countLeft';
     setToggle(tt);
   }
   return (
